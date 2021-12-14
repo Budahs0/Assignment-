@@ -91,13 +91,14 @@
 </div>
 <!-- End of Image Carousel -->
 
-<!-- Login Section -->
+<!-- Login Section and Register Section -->
 <div id="login" class="w3-container w3-padding-2">
-    <h1 class="w3-border-top w3-border-bottom w3-border-light-grey w3-center">Login</h1>
 
-    <div class="login">
+    <div class="register w3-center">
 
-        <form action="authenticate.php" method="post">
+        <h1>Register</h1>
+
+        <form action="register.php" method="post" autocomplete="off">
 
             <label for="username">
                 <i class="fas fa-user"></i>
@@ -106,15 +107,43 @@
             <input type="text" name="username" placeholder="Username" id="username" required>
 
             <label for="password">
-                <i class="password"></i>
+                <i class="fas fa-lock"></i>
             </label>
 
-            <input type="text" name="password" placeholder="Password" id="password" required>
-            <input type="submit" value="Login">
+            <input type="password" name="password" placeholder="Password" id="password" required>
+
+            <label for="email">
+                <i class="fas fa-envelope"></i>
+            </label>
+
+            <input type="email" name="email" placeholder="Email" id="email" required>
+            <input type="submit" value="Register">
 
         </form>
-    
-    </div> 
+    </div>
+
+    <div class="login">
+
+			<h1>Login</h1>
+
+			<form action="login.php" method="post">
+
+				<label for="username">
+					<i class="fas fa-user"></i>
+				</label>
+
+				<input type="text" name="username" placeholder="Username" id="username" required>
+
+				<label for="password">
+					<i class="fas fa-lock"></i>
+				</label>
+
+				<input type="password" name="password" placeholder="Password" id="password" required>
+				<input type="submit" value="Login">
+
+			</form>
+
+		</div>
 
 </div>
 <!-- End of Login Section -->
