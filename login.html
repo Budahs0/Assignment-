@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <meta charset="UTF-8"> <!-- This tells the browser to use char encoding when translating machine code -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- This allows the website to scale correctly on different devices -->
+
+    <link rel="stylesheet" href="styles.css"> <!-- This links to the style sheet, the majority of the visuals code for the website go in here -->
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css"> <!-- And this links to the w3schools to allow me to use the visual styles (Not 100% sure if I can use this for the assignment)-->
+
+    <title>Assignment</title> <!-- The title of the website -->
+
+</head>
+
+<body>
+
+<!-- Navigation -->    
+<div class="w3-top w3-bar w3-blue w3-wide w3-padding w3-card-2"> <!-- These are the buttoms that the user is able to click on, taking them to different pages -->
+    <a href="main.html" class="w3-button w3-bar-item w3-hover-white">Anglia Ruskin</a>
+
+<div class="w3-right">
+    <a href="login.html" class="w3-button w3-bar-item w3-hover-white">Login</a>
+</div>
+
+<!-- These buttons are purely here for cosmetics reasons on the website as I'm only required to design 2 pages and no more -->
+<div class="w3-right">
+    <a href="#" class="w3-button w3-bar-item w3-hover-white">Study with us</a>
+</div>
+
+<div class="w3-right">
+    <a href="#" class="w3-button w3-bar-item w3-hover-white">Student life</a>
+</div>
+
+<div class="w3-right">
+    <a href="#" class="w3-button w3-bar-item w3-hover-white">International</a>
+</div>
+
+<div class="w3-right">
+    <a href="#" class="w3-button w3-bar-item w3-hover-white">Research</a>
+</div>
+
+<div class="w3-right">
+    <a href="#" class="w3-button w3-bar-item w3-hover-white">Business and employers</a>
+</div>
+
+</div>
+<!-- End of Navigation -->
+
+<!-- Home Page Elements -->
+
+<!-- Image Carousel -->
+<!-- I had to research how to make this without using JavaScript -->
+
+<div class="carousel">
+    <div class="carousel-inner">
+        
+        <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
+
+        <div class="carousel-item">
+            <img src="Images/Image-1.jpg">
+        </div>
+
+        <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
+
+        <div class="carousel-item">
+            <img src="Images/Image-2.jpg">
+        </div>
+
+        <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
+
+        <div class="carousel-item">
+            <img src="Images/Image-3.jpg">
+        </div>
+
+<!-- This code is for the Next and Previous buttons for the slideshow -->
+        <label for="carousel-3" class="carousel-control prev control-1">‹</label>
+
+        <label for="carousel-2" class="carousel-control next control-1">›</label>
+
+        <label for="carousel-1" class="carousel-control prev control-2">‹</label>
+
+        <label for="carousel-3" class="carousel-control next control-2">›</label>
+
+        <label for="carousel-2" class="carousel-control prev control-3">‹</label>
+
+        <label for="carousel-1" class="carousel-control next control-3">›</label>
+
+    </div>
+</div>
+<!-- End of Image Carousel -->
+
+<!-- Login Section -->
+<div id="login" class="w3-container w3-padding-2">
+    <h1 class="w3-border-top w3-border-bottom w3-border-light-grey w3-center">Login</h1>
+
+    <div class="login">
+
+        <form action="authenticate.php" method="post">
+
+            <label for="username">
+                <i class="fas fa-user"></i>
+            </label>
+
+            <input type="text" name="username" placeholder="Username" id="username" required>
+
+            <label for="password">
+                <i class="password"></i>
+            </label>
+
+            <input type="text" name="password" placeholder="Password" id="password" required>
+            <input type="submit" value="Login">
+
+        </form>
+    
+    </div> 
+
+</div>
+<!-- End of Login Section -->
+
+<!-- Couldn't work out how to make a space between the about me section and the search section so this is temporary -->
+<div id="space" class="w3-padding-16"></div>
+
+<!-- Contact Section -->
+<div id="contact" class="w3-container w3-padding-16">
+
+    <h3 class="w3-border-bottom w3-border-top w3-border-light-grey w3-padding-8 w3-center">More Information</h3>
+
+    <!-- Grid Layout code to make the text appear in a grid for the more information section -->
+    <div class="row">
+        <div class="column" style="background-color: white;">
+        
+            <h4>About our University</h4>
+            
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Our vision and values</a></li>
+            <li><a href="#">Equality, Diversity and Inclusion</a></li>
+            <li><a href="#">Governance</a></li>
+
+        </div>
+
+        <div class="column" style="background-color: white;">
+        
+            <h4>Faculties</h5>
+            
+            <li><a href="#">Arts, Humanities and Social Science</a></li>
+            <li><a href="#">Business and Law</a></li>
+            <li><a href="#">Health, Education, Medicince and Social Care</a></li>
+            <li><a href="#">Science and Engineering</a></li>
+
+        </div>
+
+    <div class="row">
+        <div class="column" style="background-color: white;">
+            
+            <h4>Our campuses</h4>
+
+            <li><a href="#">Cambridge campus</a></li>
+            <li><a href="#">Chelmsford campus</a></li>
+            <li><a href="#">ARU Peterborough</a></li>
+            <li><a href="#">ARU London</a></li>
+
+        </div>
+
+        <div class="column" style="background-color: white;">
+            
+            <h4>Research institutes</h4>
+
+            <li><a href="#">Cambridge institute for Music Therapy</a></li>
+            <li><a href="#">Global Sustainbility Institute</a></li>
+            <li><a href="#">Policing Institute for the Eastern Region</a></li>
+            <li><a href="#">StoryLab</a></li>  
+
+        </div>
+
+    </div>
+
+</div>
+<!-- End of Home Elements -->
+
+</html>
+
+<!-- I used https://www.w3schools.com/html/ and https://www.w3schools.com/css/default.asp to help me in certain areas that I wasn't familiar with in HTML and CSS, Google was also used for research with parts I was stuck on like the Image carousel. -->
+
+
+
